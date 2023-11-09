@@ -8,6 +8,9 @@ import { TripsComponent } from './components/trips/trips.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import {  HttpClientModule } from '@angular/common/http';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -18,9 +21,12 @@ import { GoogleMapsModule } from '@angular/google-maps';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatSnackBarModule,
     BrowserAnimationsModule,
     NgbModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    HttpClientModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
